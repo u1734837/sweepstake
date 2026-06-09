@@ -16,7 +16,7 @@ const teamsList = [
 
 // 👇 MANUALLY ASSIGN TEAMS HERE
 const teamAssignments = {
-  "Algeria": "Unassigned",
+  "Algeria": "Test",
   "Argentina": "Unassigned",
   "Australia": "Unassigned",
   "Austria": "Unassigned",
