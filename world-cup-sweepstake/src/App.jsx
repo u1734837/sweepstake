@@ -35,7 +35,7 @@ const teamAssignments = {
   "Ecuador": "Unassigned",
   "Egypt": "Unassigned",
   "England": "Unassigned",
-  "France": "Unassigned",
+  "France": "Ant",
   "Germany": "Unassigned",
   "Ghana": "Unassigned",
   "Haiti": "Unassigned",
