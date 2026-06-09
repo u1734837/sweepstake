@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { fixtures } from "./fixtures";
 
 const teamsList = [
   "Canada","Mexico","USA",
@@ -75,7 +76,7 @@ const peopleList = [
   "Andy","Emily","Nathan","Joe","James","Mark","Rich","Nic",
   "Alan","Lola","Keisha","Josh","Maisie","Brian","Kirsty","James",
   "Jason","Niall","George","Claire","Liv","Luke","Lucy","Mark",
-  "Leigh","Antonia","Nigel","Genesa","Harmeet","Andy","Ken","BOGEY",
+  "Leigh","Antonia","Nigel","Genesa","Harmeet","Andy","Ken","BOGEY"
 ];
 
 export default function App() {
@@ -94,6 +95,11 @@ export default function App() {
 
   const targetDate = new Date("2026-06-09T19:00:00");
   const [timeLeft, setTimeLeft] = useState("");
+
+  //const today = new Date().toISOString().split("T")[0];
+  //for testing date
+  const today = "2026-06-10"; // Replace with actual date
+  const todaysFixtures = fixtures[today] || [];
 
   useEffect(() => {
     const update = () => {
@@ -114,6 +120,7 @@ export default function App() {
 
     update();
     const interval = setInterval(update, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -121,7 +128,6 @@ export default function App() {
     setSelectedTeam(team);
   };
 
-  // ✅ SAFE LOOKUP (fixes your issue)
   const getAssignment = (team) => {
     return teamAssignments?.[team?.trim?.()] ?? "Unassigned";
   };
@@ -131,9 +137,9 @@ export default function App() {
 
       {/* FLOATING PEOPLE */}
       <div className="floating-names">
-        {floatingPeople.map((p) => (
+        {floatingPeople.map((p, index) => (
           <div
-            key={p.name}
+            key={`${p.name}-${index}`}
             className="float-name"
             style={{
               left: `${p.left}%`,
@@ -144,6 +150,26 @@ export default function App() {
             {p.name}
           </div>
         ))}
+      </div>
+
+      {/* FIXTURES */}
+      <div className="fixtures-box">
+        <h2>Today's Fixtures</h2>
+
+        {todaysFixtures.length === 0 ? (
+          <p>No fixtures today</p>
+        ) : (
+          <div className="fixtures-list">
+            {todaysFixtures.map((match, index) => (
+              <div key={index} className="fixture">
+                <span>{match.time}</span>
+                <strong>
+                  {match.home} vs {match.away}
+                </strong>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* HEADER */}
@@ -158,6 +184,7 @@ export default function App() {
         {/* ACTIVE */}
         <div className="box">
           <h2>Active Teams</h2>
+
           <div className="grid">
             {activeTeams.map((team) => (
               <div
@@ -174,6 +201,7 @@ export default function App() {
         {/* KNOCKED OUT */}
         <div className="box">
           <h2>Knocked Out</h2>
+
           <div className="grid">
             {knockedOutTeams.map((team) => (
               <div
@@ -189,10 +217,16 @@ export default function App() {
 
       </div>
 
-      {/* POPUP */}
+      {/* MODAL */}
       {selectedTeam && (
-        <div className="modal" onClick={() => setSelectedTeam(null)}>
-          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="modal"
+          onClick={() => setSelectedTeam(null)}
+        >
+          <div
+            className="modal-box"
+            onClick={(e) => e.stopPropagation()}
+          >
             <h2>{selectedTeam}</h2>
 
             <p>
