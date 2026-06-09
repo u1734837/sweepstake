@@ -3,7 +3,7 @@ import "./App.css";
 
 const teamsList = [
   "Canada","Mexico","USA",
-  "AHHHHH","Argentina","Australia","Austria","Belgium",
+  "Algeria","Argentina","Australia","Austria","Belgium",
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
   "Congo DR","Côte d'Ivoire","Croatia","Curaçao","Czechia",
   "Ecuador","Egypt","England","France","Germany","Ghana",
