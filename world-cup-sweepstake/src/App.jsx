@@ -14,7 +14,7 @@ const teamsList = [
   "Tunisia","Türkiye","Uruguay","Uzbekistan"
 ];
 
-// 👇 MANUALLY ASSIGN TEAMS HERE
+// MANUALLY ASSIGN TEAMS HERE
 const teamAssignments = {
   "Algeria": "Test",
   "Argentina": "Unassigned",
@@ -66,7 +66,7 @@ const teamAssignments = {
   "Uzbekistan": "Unassigned"
 };
 
-// 👇 MANUALLY EDIT THIS LIST ONLY
+// MANUALLY EDIT THIS LIST ONLY
 const knockedOutTeams = [];
 
 const peopleList = [
