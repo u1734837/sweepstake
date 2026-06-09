@@ -3,7 +3,7 @@ import "./App.css";
 
 const teamsList = [
   "Canada","Mexico","USA",
-  "Algeria","Argentina","Australia","Austria","Belgium",
+  "AHHHHH","Argentina","Australia","Austria","Belgium",
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
   "Congo DR","Côte d'Ivoire","Croatia","Curaçao","Czechia",
   "Ecuador","Egypt","England","France","Germany","Ghana",
@@ -16,7 +16,7 @@ const teamsList = [
 
 // 👇 MANUALLY ASSIGN TEAMS HERE
 const teamAssignments = {
-  "AAAAAA": "Test",
+  "Algeria": "Test",
   "Argentina": "Unassigned",
   "Australia": "Unassigned",
   "Austria": "Unassigned",
