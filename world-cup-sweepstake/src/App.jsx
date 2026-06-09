@@ -96,9 +96,9 @@ export default function App() {
   const targetDate = new Date("2026-06-09T19:00:00");
   const [timeLeft, setTimeLeft] = useState("");
 
-  //const today = new Date().toISOString().split("T")[0];
+  const today = new Date().toISOString().split("T")[0];
   //for testing date
-  const today = "2026-06-10"; // Replace with actual date
+  //const today = "2026-06-10"; // Replace with actual date
   const todaysFixtures = fixtures[today] || [];
 
   useEffect(() => {
