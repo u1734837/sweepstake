@@ -8,11 +8,11 @@ const teamsList = [
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
   "Congo DR","Côte d'Ivoire","Croatia","Curaçao","Czechia",
   "Ecuador","Egypt","England","France","Germany","Ghana",
-  "Haiti","IR Iran","Iraq","Japan","Jordan","Korea Republic",
+  ,"IR Iran","Japan","Jordan","Korea Republic",
   "Morocco","Netherlands","New Zealand","Norway","Panama",
   "Paraguay","Portugal","Qatar","Saudi Arabia","Scotland",
-  "Senegal","South Africa","Spain","Sweden","Switzerland",
-  "Tunisia","Türkiye","Uruguay","Uzbekistan"
+  "South Africa","Spain","Sweden","Switzerland",
+  "Türkiye","Uruguay","Uzbekistan"
 ];
 
 // MANUALLY ASSIGN TEAMS HERE
@@ -68,15 +68,15 @@ const teamAssignments = {
 };
 
 // MANUALLY EDIT THIS LIST ONLY
-const knockedOutTeams = [];
+const knockedOutTeams = ["Haiti", "Tunisia", "Senegal", "Iraq"];
 
 const peopleList = [
   "Luke","Lucy","Ant","Dave","Hardeep","David","Tom","Rob",
   "Jack","James","Dom","Sita","Dave","Jasmine/Rosalie","Lin","Selene",
   "Andy","Emily","Nathan","Joe","James","Mark","Rich","Nic",
-  "Alan","Lola","Keisha","Josh","Maisie","Brian","Kirsty","James",
+  "Alan","Lola","Keisha","Josh","Maisie","Brian","Kirsty","XX",
   "Jason","Niall","George","Claire","Liv","Luke","Lucy","Mark",
-  "Leigh","Antonia","Nigel","Genesa","Harmeet","Andy","Ken","BOGEY"
+  "Leigh","XX","XX","Genesa","Harmeet","XX","Ken","BOGEY"
 ];
 
 export default function App() {
