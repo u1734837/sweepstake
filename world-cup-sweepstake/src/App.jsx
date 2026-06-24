@@ -79,6 +79,10 @@ const peopleList = [
   "Leigh","xx","xx","Genesa","Harmeet","Andy","Ken","BOGEY"
 ];
 
+const highlightedTeams = [
+  "Switzerland"
+];
+
 export default function App() {
   const [selectedTeam, setSelectedTeam] = useState(null);
 
@@ -189,7 +193,9 @@ export default function App() {
             {activeTeams.map((team) => (
               <div
                 key={team}
-                className="team"
+                className={`team ${
+                  highlightedTeams.includes(team) ? "champion-team" : ""
+                }`}
                 onClick={() => handleTeamClick(team)}
               >
                 {team}

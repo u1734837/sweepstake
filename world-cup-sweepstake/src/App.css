@@ -279,3 +279,37 @@ h1 {
   background: gold;
   cursor: pointer;
 }
+
+/* GOLD HIGHLIGHTED TEAMS */
+.champion-team {
+  color: gold;
+  font-weight: bold;
+  position: relative;
+
+  border: 1px solid gold !important;
+
+  text-shadow:
+    0 0 5px gold,
+    0 0 10px gold;
+
+  box-shadow:
+    0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.champion-team::before,
+.champion-team::after {
+  content: "★";
+  color: gold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+
+.champion-team::before {
+  left: 8px;
+}
+
+.champion-team::after {
+  right: 8px;
+}
