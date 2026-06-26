@@ -80,7 +80,7 @@ const peopleList = [
 ];
 
 const highlightedTeams = [
-  "Switzerland", "Mexico", "Brazil", "Germany"
+  "Switzerland", "Mexico", "Brazil", "Germany", "USA", "Netherlands"
 ];
 
 export default function App() {
