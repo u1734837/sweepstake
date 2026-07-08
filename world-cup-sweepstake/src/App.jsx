@@ -3,13 +3,10 @@ import "./App.css";
 import { fixtures } from "./fixtures";
 
 const teamsList = [
-  "Canada","Mexico","USA",
-  "Algeria","Argentina","Australia","Austria","Belgium",
-  "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
-  "Croatia",
-  "Egypt","England","France","Ghana",
+  "Argentina","Belgium",
+  "England","France",
   "Morocco","Norway",
-  "Paraguay","Portugal","Spain","Switzerland"
+  "Spain","Switzerland"
 ];
 
 // MANUALLY ASSIGN TEAMS HERE
@@ -66,20 +63,24 @@ const teamAssignments = {
 
 // MANUALLY EDIT THIS LIST ONLY
 const knockedOutTeams = ["Haiti", "Tunisia", "Turkey", "Qatar", "Czechia", "Curaçao", "Iraq", "New Zealand", "Saudi Arabia", "IR Iran", "Korea Republic", "Scotland", "Uruguay", "Panama", "Uzbekistan", "Jordan",
-  "South Africa", "Japan", "Germany", "Netherlands", "Côte d'Ivoire", "Sweden", "Ecuador", "Congo DR", "Senegal"
+  "South Africa", "Japan", "Germany", "Netherlands", "Côte d'Ivoire", "Sweden", "Ecuador", "Congo DR", "Senegal",
+  "Croatia", "Colombia","Canada","Mexico","USA",
+  "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
+  "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana"
 ];
 
 const peopleList = [
-  "XX","Lucy","XX","Dave","Hardeep","XX","Tom","Rob",
-  "XX","James","XX","XX","XX","XX","XX",
-  "XX","XX","XX","Joe","James","Mark","Rich","Nic",
-  "Alan","Lola","Keisha","Josh","Maisie","Brian","XX","XX",
-  "Jason","Niall","XX","XX","Liv","XX","XX","Mark",
-  "Leigh","xx","XX","Genesa","XX","XX","Ken","XX"
+  "XX","XX","XX","Dave","XX","XX","XX","Rob",
+  "XX","XX","XX","XX","XX","XX","XX",
+  "XX","XX","XX","XX","James","XX","XX","Nic",
+  "XX","XX","XX","XX","XX","Brian","XX","XX",
+  "Jason","XX","XX","XX","Liv","XX","XX","Mark",
+  "XX","xx","XX","XX","XX","XX","XX","XX"
 ];
 
 const highlightedTeams = [
-  "Switzerland", "Mexico", "Brazil", "Germany", "USA", "Netherlands", "France", "Belgium", "Spain", "England", "Argentina", "Colombia"
+  "Switzerland", "Mexico", "Brazil", "Germany", "USA", "Netherlands", "France", "Belgium", "Spain", 
+  "England", "Argentina"
 ];
 
 export default function App() {
