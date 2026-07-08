@@ -313,3 +313,104 @@ h1 {
 .champion-team::after {
   right: 8px;
 }
+
+/* ==========================
+   NIC vs BRIAN FIGHT
+========================== */
+
+.fight-scene {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.fighter {
+  position: absolute;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 12px rgba(255,255,255,.6);
+}
+
+.nic {
+  color: #4fc3ff;
+  animation: nicFight 22s infinite;
+}
+
+.brian {
+  color: gold;
+  right: -180px;
+  animation: brianFight 22s infinite;
+}
+
+.impact {
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  transform: translateX(-50%) scale(0);
+  font-size: 2rem;
+  animation: impactFlash 22s infinite;
+}
+
+@keyframes nicFight {
+
+  0%,70%,100%{
+    left:-180px;
+    transform:rotate(0deg);
+  }
+
+  35%{
+    left:44%;
+    transform:rotate(-10deg);
+  }
+
+  36%,38%,40%,42%{
+    transform:rotate(12deg);
+  }
+
+  45%{
+    left:-180px;
+  }
+}
+@keyframes brianFight {
+  0%,70%,100%{
+    right:-180px;
+    transform: rotate(0deg);
+  }
+
+  35%{
+    right:44%;
+    transform: rotate(10deg);
+  }
+
+  36%,38%,40%,42%{
+    transform: rotate(-12deg);
+  }
+
+  45%{
+    right:-180px;
+  }
+}
+
+@keyframes impactFlash{
+
+  0%,34%,46%,100%{
+    transform:translateX(-50%) scale(0);
+    opacity:0;
+  }
+
+  35%,37%,39%,41%{
+    transform:translateX(-50%) scale(1.8);
+    opacity:1;
+  }
+
+  36%,38%,40%,42%{
+    transform:translateX(-50%) scale(1.2);
+    opacity:.8;
+  }
+}

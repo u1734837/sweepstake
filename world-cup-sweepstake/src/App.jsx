@@ -138,6 +138,15 @@ export default function App() {
 
   return (
     <div className="app">
+    <div className="fight-scene">
+  <div className="fighter nic">🥖 Nic</div>
+
+  <div className="impact">
+    💥
+  </div>
+
+  <div className="fighter brian">🐪 Brian</div>
+</div>
 
       {/* FLOATING PEOPLE */}
       <div className="floating-names">
