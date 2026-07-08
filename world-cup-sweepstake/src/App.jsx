@@ -110,7 +110,7 @@ export default function App() {
       const diff = targetDate - new Date();
 
       if (diff <= 0) {
-        setTimeLeft("DRAW TIME!");
+        setTimeLeft("=== QUARTER FINALS ===");
         return;
       }
 
