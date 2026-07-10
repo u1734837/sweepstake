@@ -5,7 +5,7 @@ import { fixtures } from "./fixtures";
 const teamsList = [
   "Argentina","Belgium",
   "England","France",
-  "Morocco","Norway",
+  "Norway",
   "Spain","Switzerland"
 ];
 
@@ -66,14 +66,14 @@ const knockedOutTeams = ["Haiti", "Tunisia", "Turkey", "Qatar", "Czechia", "Cura
   "South Africa", "Japan", "Germany", "Netherlands", "Côte d'Ivoire", "Sweden", "Ecuador", "Congo DR", "Senegal",
   "Croatia", "Colombia","Canada","Mexico","USA",
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
-  "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana"
+  "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana", "Morocco"
 ];
 
 const peopleList = [
   "XX","XX","XX","Dave","XX","XX","XX","Rob",
   "XX","XX","XX","XX","XX","XX","XX",
   "XX","XX","XX","XX","James","XX","XX","Nic",
-  "XX","XX","XX","XX","XX","Brian","XX","XX",
+  "XX","XX","XX","XX","XX","xx","XX","XX",
   "Jason","XX","XX","XX","Liv","XX","XX","Mark",
   "XX","xx","XX","XX","XX","XX","XX","XX"
 ];
