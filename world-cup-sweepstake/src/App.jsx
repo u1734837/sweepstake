@@ -5,8 +5,7 @@ import { fixtures } from "./fixtures";
 const teamsList = [
   "Argentina",
   "England","France",
-  "Norway",
-  "Spain","Switzerland"
+  "Spain"
 ];
 
 // MANUALLY ASSIGN TEAMS HERE
@@ -66,7 +65,8 @@ const knockedOutTeams = ["Haiti", "Tunisia", "Turkey", "Qatar", "Czechia", "Cura
   "South Africa", "Japan", "Germany", "Netherlands", "Côte d'Ivoire", "Sweden", "Ecuador", "Congo DR", "Senegal",
   "Croatia", "Colombia","Canada","Mexico","USA",
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
-  "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana", "Morocco", "Belgium"
+  "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana", "Morocco", "Belgium", "Switzerland",
+  "Norway"
 ];
 
 const peopleList = [
@@ -74,7 +74,7 @@ const peopleList = [
   "XX","XX","XX","XX","XX","XX","XX",
   "XX","XX","XX","XX","James","XX","XX","Nic",
   "XX","XX","XX","XX","XX","xx","XX","XX",
-  "Jason","XX","XX","XX","Liv","XX","XX","Mark",
+  "Jason","XX","XX","XX","Liv","XX","XX","xx",
   "XX","xx","XX","XX","XX","XX","XX","XX"
 ];
 
@@ -139,13 +139,13 @@ export default function App() {
   return (
     <div className="app">
     <div className="fight-scene">
-  <div className="fighter nic">🪓James</div>
+  <div className="fighter nic">🥖 Nic</div>
 
   <div className="impact">
     💥💥💥
   </div>
 
-  <div className="fighter brian">🦁Rob</div>
+  <div className="fighter brian">💃 Liv</div>
 </div>
 
       {/* FLOATING PEOPLE */}
