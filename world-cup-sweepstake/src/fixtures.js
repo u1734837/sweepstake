@@ -27,13 +27,28 @@ export const fixtures = {
     }
   ],
 
-  "2026-07-12": [
+  "2026-07-14": [
     {
-      group: "QF",
-      home: "Argentina",
-      away: "Switzerland",
-      time: "02:00",
-      venue: "Kansas city"
+      group: "SF",
+      home: "France",
+      away: "Spain",
+      time: "20:00"
     }
+  ],
+    "2026-07-15": [
+    {
+      group: "SF",
+      home: "England",
+      away: "Argentina",
+      time: "20:00"
+    }
+  ],
+    "2026-07-19": [
+    {
+      group: "F",
+      home: "France/Spain",
+      away: "England/Argentina",
+      time: "20:00"
+    },
   ]
 };
