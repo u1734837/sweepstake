@@ -4,7 +4,7 @@ import { fixtures } from "./fixtures";
 
 const teamsList = [
   "Argentina",
-  "England","France",
+  "England",
   "Spain"
 ];
 
@@ -66,13 +66,13 @@ const knockedOutTeams = ["Haiti", "Tunisia", "Turkey", "Qatar", "Czechia", "Cura
   "Croatia", "Colombia","Canada","Mexico","USA",
   "Bosnia and Herzegovina","Brazil","Cabo Verde","Colombia",
   "Egypt","Austria","Paraguay","Portugal", "Algeria", "Australia", "Ghana", "Morocco", "Belgium", "Switzerland",
-  "Norway"
+  "Norway", "France"
 ];
 
 const peopleList = [
   "XX","XX","XX","xx","XX","XX","XX","Rob",
   "XX","XX","XX","XX","XX","XX","XX",
-  "XX","XX","XX","XX","James","XX","XX","Nic",
+  "XX","XX","XX","XX","xx","XX","XX","xx",
   "XX","XX","XX","XX","XX","xx","XX","XX",
   "Jason","XX","XX","XX","Liv","XX","XX","xx",
   "XX","xx","XX","XX","XX","XX","XX","XX"
@@ -139,13 +139,13 @@ export default function App() {
   return (
     <div className="app">
     <div className="fight-scene">
-  <div className="fighter nic">🥖 Nic</div>
+  <div className="fighter nic">🦁 Rob</div>
 
   <div className="impact">
     💥💥💥
   </div>
 
-  <div className="fighter brian">💃 Liv</div>
+  <div className="fighter brian">🧉 Jason</div>
 </div>
 
       {/* FLOATING PEOPLE */}
